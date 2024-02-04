@@ -1,0 +1,30 @@
+.discount_header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: blue;
+    /* transition: background-color 0.3s ease, height 0.3s ease; */
+  }
+  
+  .discount_bar {
+    background-color: red;
+    height: 50px;
+  }
+  
+  .header {
+    background-color: green;
+    height: 100px;
+  }
+  
+  .discount-header.scrolled {
+    background-color: transparent; /* Hide background color when scrolled */
+  }
+  
+  .discount-header.scrolled .discount-bar {
+    height: 0; /* Hide the discount bar when scrolled */
+  }
+  
+  .discount-header.scrolled .header {
+    height: 50px; /* Reduce the height of the header when scrolled */
+  }
+  
